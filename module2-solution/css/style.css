@@ -1,0 +1,95 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  width: calc(100% - 50px);
+  margin: auto;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  background-color: #999999;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.section-title {
+  background-color: #c14543;
+  float: right;
+  width: 130px;
+  padding: 4px 0px 4px 0px;
+  border: solid #000;
+  border-width: 0px 0px 2px 2px;
+  font-size: 1.25em;
+}
+
+.section-1 {
+  background-color: #d59898;
+}
+
+.section-2 {
+  background-color: #c14543;
+  color: #f1eaf1;
+}
+
+.section-3 {
+  background-color: #e5d198;
+}
+
+p {
+  clear: right;
+  padding: 10px;
+  text-align: left;
+}
+
+/*----------------------------- Media Query -----------------------------*/
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .col-md-6 {
+    width: 49%;
+    margin-bottom: 20px;
+    /* display: flex;
+    flex-basis: 49%; */
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 32%;
+  }
+  .row {
+    justify-content: space-between;
+  }
+}
